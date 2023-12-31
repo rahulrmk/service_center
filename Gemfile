@@ -181,7 +181,7 @@ group :production do
    gem 'passenger'
    gem 'rails_12factor'
    #gem 'ruby-plsql'
-   gem 'activerecord-oracle_enhanced-adapter', '~> 7.0.2'
+   gem 'activerecord-oracle_enhanced-adapter', '~> 7.0.3'
    #gem 'ruby-oci8', '~> 2.2', '>= 2.2.12'
 
 end

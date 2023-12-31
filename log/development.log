@@ -15642,3 +15642,265 @@ Completed 200 OK in 1027ms (Views: 939.7ms | ActiveRecord: 16.3ms | Solr: 0.0ms 
 
 DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
  (called from include at /home/rahul/project/service_center-ft/app/controllers/application_controller.rb:3)
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/rahul/project/service_center/app/controllers/application_controller.rb:3)
+Started GET "/partners" for 127.0.0.1 at 2023-12-31 16:46:02 +0530
+Processing by PartnersController#index as HTML
+Completed 500 Internal Server Error in 28ms (Allocations: 8919)
+
+
+  
+ArgumentError (Passing string to be evaluated in :if and :unless conditional options is not supported. Pass a symbol for an instance method, or a lambda, proc or block, instead.):
+  
+activesupport (7.0.4) lib/active_support/callbacks.rb:357:in `check_conditionals'
+activesupport (7.0.4) lib/active_support/callbacks.rb:300:in `initialize'
+activesupport (7.0.4) lib/active_support/callbacks.rb:289:in `new'
+activesupport (7.0.4) lib/active_support/callbacks.rb:289:in `build'
+activesupport (7.0.4) lib/active_support/callbacks.rb:761:in `block in set_callback'
+activesupport (7.0.4) lib/active_support/callbacks.rb:760:in `map'
+activesupport (7.0.4) lib/active_support/callbacks.rb:760:in `set_callback'
+activemodel (7.0.4) lib/active_model/validations.rb:172:in `validate'
+activemodel (7.0.4) lib/active_model/validations/with.rb:96:in `block in validates_with'
+activemodel (7.0.4) lib/active_model/validations/with.rb:85:in `each'
+activemodel (7.0.4) lib/active_model/validations/with.rb:85:in `validates_with'
+activerecord (7.0.4) lib/active_record/validations/presence.rb:64:in `validates_presence_of'
+qg-inw (6c496efa3977) app/models/partner.rb:64:in `<class:Partner>'
+qg-inw (6c496efa3977) app/models/partner.rb:1:in `<top (required)>'
+<internal:/home/rahul/.rbenv/versions/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+<internal:/home/rahul/.rbenv/versions/3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+zeitwerk (2.6.8) lib/zeitwerk/kernel.rb:30:in `require'
+activesupport (7.0.4) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4) lib/active_support/inflector/methods.rb:306:in `safe_constantize'
+activesupport (7.0.4) lib/active_support/core_ext/string/inflections.rb:87:in `safe_constantize'
+cancancan (3.5.0) lib/cancan/controller_resource_name_finder.rb:12:in `namespaced_name'
+cancancan (3.5.0) lib/cancan/controller_resource.rb:65:in `resource_class'
+cancancan (3.5.0) lib/cancan/controller_resource.rb:88:in `resource_class_with_parent'
+cancancan (3.5.0) lib/cancan/controller_resource.rb:40:in `authorize_resource'
+cancancan (3.5.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+audited (5.3.3) lib/audited/sweeper.rb:16:in `around'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+audited (5.3.3) lib/audited/sweeper.rb:16:in `around'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+turnout (2.5.0) lib/rack/turnout.rb:25:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/rack/browser_monitoring.rb:38:in `traced_call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:27:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+request_store (1.5.1) lib/request_store/middleware.rb:19:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+secure_headers (6.5.0) lib/secure_headers/middleware.rb:11:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+newrelic_rpm (9.2.2) lib/new_relic/agent/instrumentation/middleware_tracing.rb:99:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+newrelic_rpm (9.2.2) lib/new_relic/agent/tracer.rb:434:in `block (2 levels) in thread_block_with_current_transaction'
+newrelic_rpm (9.2.2) lib/new_relic/agent/tracer.rb:356:in `capture_segment_error'
+newrelic_rpm (9.2.2) lib/new_relic/agent/tracer.rb:433:in `block in thread_block_with_current_transaction'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-12-31 16:46:31 +0530
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/sessions/new.html.haml within layouts/application (Duration: 62.9ms | Allocations: 14542)
+  Rendered layouts/_header.html.haml (Duration: 9.4ms | Allocations: 7952)
+  Rendered layouts/_footer.html.haml (Duration: 4.0ms | Allocations: 1477)
+  Rendered layout layouts/application.html.erb (Duration: 13061.9ms | Allocations: 4096337)
+Completed 200 OK in 19600ms (Views: 13083.5ms | ActiveRecord: 3671.6ms | Solr: 0.0ms | Allocations: 4116344)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-12-31 16:47:05 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8u0fHE2opCXAJ2Qn4Fhl7IADc-ommdHL-TwGN0VTHAo6tbo_-6SnGwccE25a-3xoSX8f6l9p-heKjB3fS-ZPzg", "user"=>{"username"=>"apjanvekar", "password"=>"rMI0w9EQ4aFVl802ApN5nT8VEi52TU8cXPa9Aw3qs2VeG4pXDFLiYJFgx56OlVv1FDa8/Bah4SbCXEubz7VzCnqnTfzzqEIRQirf/itJYHHaKJS5+NPSuww5PdwompF5PCcjKVQ4kGRBA4s/oM9zVjBpqGGADPoMVO4EbytAgSyGLqNuHgKvF8DC+v8lzU5Pqco/P1/nKV278smkRuQ/WUEz4RObgJkOUngvANZYqg/fft7Uk0QYQZhbDtS+h8ViwHjw5kgW2v+2364t2hSJF6JjYUPR3DmFCYstAb7MROs6tMWmoN4S2pidGb0XGT37QsDlgh3DFU2hqY9tihUU+g=="}, "commit"=>"Sign In"}
+  [1m[36mUser Load (397.0ms)[0m  [1m[34mSELECT "USERS".* FROM "USERS" WHERE "USERS"."USERNAME" = :a1 ORDER BY "USERS"."ID" ASC FETCH FIRST :a2 ROWS ONLY[0m  [["username", "apjanvekar"], ["LIMIT", 1]]
+  [1m[36mUser Update (18.4ms)[0m  [1m[33mUPDATE "USERS" SET "UPDATED_AT" = :a1, "UNIQUE_SESSION_ID" = :a2 WHERE "USERS"."ID" = :a3[0m  [["updated_at", "2023-12-31 11:17:06.167262"], ["unique_session_id", "p1L19ZzqU7DjQzNtZfAn"], ["id", 1]]
+  [1m[36mUser Update (3.1ms)[0m  [1m[33mUPDATE "USERS" SET "SIGN_IN_COUNT" = :a1, "CURRENT_SIGN_IN_AT" = :a2, "LAST_SIGN_IN_AT" = :a3, "UPDATED_AT" = :a4 WHERE "USERS"."ID" = :a5[0m  [["sign_in_count", 98], ["current_sign_in_at", "2023-12-31 11:17:06.197137"], ["last_sign_in_at", "2023-12-29 12:24:00.063787"], ["updated_at", "2023-12-31 11:17:06.197461"], ["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 626ms (ActiveRecord: 418.5ms | Allocations: 9379)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-31 16:47:06 +0530
+Processing by DashboardController#overview as HTML
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "USERS".* FROM "USERS" WHERE "USERS"."ID" = :a1 ORDER BY "USERS"."ID" ASC FETCH FIRST :a2 ROWS ONLY[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/overview.html.haml within layouts/application
+  Rendered dashboard/_panel.html.haml (Duration: 79.5ms | Allocations: 45251)
+  Rendered dashboard/_panel.html.haml (Duration: 12.1ms | Allocations: 9037)
+  Rendered dashboard/_panel.html.haml (Duration: 0.5ms | Allocations: 268)
+  Rendered dashboard/overview.html.haml within layouts/application (Duration: 114.1ms | Allocations: 65415)
+  Rendered layout layouts/application.html.erb (Duration: 114.5ms | Allocations: 65529)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 7.1ms | Allocations: 67694)
+
+
+  
+ActionView::Template::Error (uninitialized constant Qg::Sc):
+    1: - p group
+    2: - m = build_menu(group)
+    3: - service = sc_service rescue nil
+    4: - unless m.nil?
+    5:   %h1 #{m[:name]}
+  
+app/helpers/dashboard_helper.rb:3:in `build_menu'
+app/views/dashboard/_panel.html.haml:2
+app/views/dashboard/overview.html.haml:5
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/rahul/project/service_center/app/controllers/application_controller.rb:3)
+Started GET "/" for 127.0.0.1 at 2023-12-31 16:49:47 +0530
+Processing by DashboardController#overview as HTML
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "USERS".* FROM "USERS" WHERE "USERS"."ID" = :a1 ORDER BY "USERS"."ID" ASC FETCH FIRST :a2 ROWS ONLY[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/overview.html.haml within layouts/application
+  Rendered dashboard/_panel.html.haml (Duration: 1780.8ms | Allocations: 1128886)
+  Rendered dashboard/_panel.html.haml (Duration: 9.6ms | Allocations: 9046)
+  [1m[36mGroup Pluck (213.5ms)[0m  [1m[34mSELECT "GROUPS"."NAME" FROM "GROUPS" INNER JOIN "USER_GROUPS" ON "GROUPS"."ID" = "USER_GROUPS"."GROUP_ID" WHERE "USER_GROUPS"."APPROVAL_STATUS" = :a1 AND "USER_GROUPS"."USER_ID" = :a2 AND "USER_GROUPS"."DISABLED" = :a3[0m  [["approval_status", "A"], ["user_id", 1], ["disabled", "0"]]
+  [1m[36mIamAuditRule Load (33.9ms)[0m  [1m[34mSELECT "IAM_AUDIT_RULES".* FROM "IAM_AUDIT_RULES" ORDER BY "IAM_AUDIT_RULES"."ID" ASC FETCH FIRST :a1 ROWS ONLY[0m  [["LIMIT", 1]]
+  Rendered dashboard/overview.html.haml within layouts/application (Duration: 10987.8ms | Allocations: 1171271)
+  Rendered layouts/_header.html.haml (Duration: 10.4ms | Allocations: 8408)
+  Rendered layouts/_footer.html.haml (Duration: 2.0ms | Allocations: 1480)
+  Rendered layout layouts/application.html.erb (Duration: 11940.0ms | Allocations: 1680325)
+Completed 200 OK in 14199ms (Views: 8270.0ms | ActiveRecord: 5579.1ms | Solr: 0.0ms | Allocations: 1708740)
+
+
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/rahul/project/service_center/app/controllers/application_controller.rb:3)
+Started GET "/" for 127.0.0.1 at 2023-12-31 16:53:18 +0530
+Processing by DashboardController#overview as HTML
+  [1m[36mUser Load (28.2ms)[0m  [1m[34mSELECT "USERS".* FROM "USERS" WHERE "USERS"."ID" = :a1 ORDER BY "USERS"."ID" ASC FETCH FIRST :a2 ROWS ONLY[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/overview.html.haml within layouts/application
+  Rendered dashboard/_panel.html.haml (Duration: 1350.0ms | Allocations: 1127553)
+  Rendered dashboard/_panel.html.haml (Duration: 12.5ms | Allocations: 9047)
+  Rendered dashboard/_panel.html.haml (Duration: 2.7ms | Allocations: 1160)
+  Rendered dashboard/overview.html.haml within layouts/application (Duration: 1384.9ms | Allocations: 1154503)
+  Rendered layout layouts/application.html.erb (Duration: 1385.3ms | Allocations: 1154669)
+Completed 500 Internal Server Error in 6061ms (ActiveRecord: 1821.2ms | Allocations: 1184403)
+
+
+  
+ActionView::Template::Error (uninitialized constant Qg::Sc):
+    1: - p group
+    2: - m = build_menu(group)
+    3: - service = sc_service rescue nil
+    4: - unless m.nil?
+    5:   %h1 #{m[:name]}
+  
+app/helpers/dashboard_helper.rb:3:in `build_menu'
+app/views/dashboard/_panel.html.haml:2
+app/views/dashboard/overview.html.haml:5
+DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+ (called from include at /home/rahul/project/service_center/app/controllers/application_controller.rb:3)
+Started GET "/" for 127.0.0.1 at 2023-12-31 16:54:06 +0530
+Processing by DashboardController#overview as HTML
+  [1m[36mUser Load (26.7ms)[0m  [1m[34mSELECT "USERS".* FROM "USERS" WHERE "USERS"."ID" = :a1 ORDER BY "USERS"."ID" ASC FETCH FIRST :a2 ROWS ONLY[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/overview.html.haml within layouts/application
+  Rendered dashboard/_panel.html.haml (Duration: 1251.2ms | Allocations: 1127552)
+  Rendered dashboard/_panel.html.haml (Duration: 11.3ms | Allocations: 9046)
+  [1m[36mGroup Pluck (22.2ms)[0m  [1m[34mSELECT "GROUPS"."NAME" FROM "GROUPS" INNER JOIN "USER_GROUPS" ON "GROUPS"."ID" = "USER_GROUPS"."GROUP_ID" WHERE "USER_GROUPS"."APPROVAL_STATUS" = :a1 AND "USER_GROUPS"."USER_ID" = :a2 AND "USER_GROUPS"."DISABLED" = :a3[0m  [["approval_status", "A"], ["user_id", 1], ["disabled", "0"]]
+  [1m[36mIamAuditRule Load (23.0ms)[0m  [1m[34mSELECT "IAM_AUDIT_RULES".* FROM "IAM_AUDIT_RULES" ORDER BY "IAM_AUDIT_RULES"."ID" ASC FETCH FIRST :a1 ROWS ONLY[0m  [["LIMIT", 1]]
+  Rendered dashboard/overview.html.haml within layouts/application (Duration: 9714.7ms | Allocations: 1169900)
+  Rendered layouts/_header.html.haml (Duration: 9.0ms | Allocations: 8408)
+  Rendered layouts/_footer.html.haml (Duration: 2.2ms | Allocations: 1480)
+  Rendered layout layouts/application.html.erb (Duration: 10378.7ms | Allocations: 1678933)
+Completed 200 OK in 15135ms (Views: 7106.7ms | ActiveRecord: 5047.9ms | Solr: 0.0ms | Allocations: 1708996)
+
+
