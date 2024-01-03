@@ -18,21 +18,5 @@ unzip "instantclient-basic-linux.x64-21.12.0.0.0dbru.zip"
 wget -O "instantclient-sqlplus-linux.x64-21.12.0.0.0dbru.zip" "https://download.oracle.com/otn_software/linux/instantclient/2112000/instantclient-sqlplus-linux.x64-21.12.0.0.0dbru.zip"
 unzip "instantclient-sqlplus-linux.x64-21.12.0.0.0dbru.zip"
 
-# array=("instantclient-basic-11.1.0.7.0-linux-x86_64.zip" "instantclient-sdk-11.1.0.7.0-linux-x86_64.zip" "instantclient-sqlplus-11.1.0.7.0-linux-x86_64.zip")
-
-# array2=("AIN3IpboU3M_7Vw" "ADScYtq8sT9m_9U" "ANCFufdEfIC56OQ")
-
-# for i in "${!array[@]}"; do
-# 	wget -q --no-check-certificate "https://onedrive.live.com/download?cid=A12F94714109F76F&resid=A12F94714109F76F%21108&authkey=${array2[i]}" --output-document="${array[i]}" 
-# 	unzip "${array[i]}"
-# done
-
-# files="instantclient-basic-11.1.0.7.0-linux-x86_64.zip instantclient-sdk-11.1.0.7.0-linux-x86_64.zip instantclient-sqlplus-11.1.0.7.0-linux-x86_64.zip"
-# for file in $files ; do
-#         #wget -q "https://s3-us-west-1.amazonaws.com/pkgr.quantiguous.com/ora-11.1.0.7/$file"
-#         wget -q --no-check-certificate "https://onedrive.live.com/download?cid=A12F94714109F76F&resid=A12F94714109F76F%21108&authkey=AIN3IpboU3M_7Vw" --output-document=$file
-# 	unzip $file
-# done
-
-sh -c "echo /tmp/oracle/instantclient_21_12/etc/ld.so.conf.d/oracle-instantclient.conf" 
+export LD_LIBRARY_PATH=/tmp/oracle/instantclient_21_12:$LD_LIBRARY_PATH
 
