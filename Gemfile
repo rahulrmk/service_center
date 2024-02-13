@@ -90,7 +90,6 @@ gem 'warden', '~> 1.2', '>= 1.2.9'#
 gem 'normalize-rails', '~> 8.0', '>= 8.0.1'
 gem 'normalize-scss', '~> 7.0', '>= 7.0.1'
 #gem 'compass-normalize', '~> 1.5'
-gem 'normalize-json', '~> 0.0.2'
 gem 'normalize_rails', '~> 0.1.0'
 gem 'normalize-json', '~> 0.0.2'
 gem 'jose', '~> 1.1', '>= 1.1.3'
@@ -124,24 +123,24 @@ gem 'will_paginate', '~> 4.0'
 
 #gem 'activerecord-oracle_enhanced-adapter'
 
-gem 'qg-inw',:git =>"https://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:x-oauth-basic@github.com/skillmine1234/qg-inw.git", branch: 'main'
+# gem 'qg-inw',:git =>"https://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:x-oauth-basic@github.com/skillmine1234/qg-inw.git", branch: 'main'
 
-gem 'qg-ft',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-ft.git", branch: 'wip'
-#gem 'qg-inw',:path=>"/home/rahul/project/qg-inw"
-#gem 'qg-ft', :path=>"/home/rahul/project/qg-ft"
+# gem 'qg-ft',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-ft.git", branch: 'wip'
+# #gem 'qg-inw',:path=>"/home/rahul/project/qg-inw"
+# #gem 'qg-ft', :path=>"/home/rahul/project/qg-ft"
 
-gem 'qg-ecol',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-ecol.git", branch: 'main'
-#gem 'qg-ecol',:path=>"/home/rahul/project/qg-ecol"
+# gem 'qg-ecol',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-ecol.git", branch: 'main'
+# #gem 'qg-ecol',:path=>"/home/rahul/project/qg-ecol"
 
-#gem 'qg-sc',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-sc.git", branch: 'changes_new_sc'
-#gem 'qg-obdx',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-obdx.git", branch: 'changes_new_sc'
-gem 'qg-sm',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-sm.git", branch: 'main' #:path=>"/home/rahul/project/qg-sm"
-gem 'qg-rc',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-rc.git", branch: 'main' #:path=>"/home/rahul/project/qg-sm"
-gem 'qg-rr',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-rr.git", branch: 'main' #:path=>"/home/rahul/project/qg-sm"
-gem 'qg-datapurge',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-datapurge.git", branch: 'main'
-gem 'qg-ns',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-ns.git", branch: 'main'
-#gem 'rp',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-rp.git", branch: 'main'
-gem 'qg-icol',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-icol.git", branch: 'main'
+# #gem 'qg-sc',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-sc.git", branch: 'changes_new_sc'
+# #gem 'qg-obdx',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-obdx.git", branch: 'changes_new_sc'
+# gem 'qg-sm',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-sm.git", branch: 'main' #:path=>"/home/rahul/project/qg-sm"
+# gem 'qg-rc',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-rc.git", branch: 'main' #:path=>"/home/rahul/project/qg-sm"
+# gem 'qg-rr',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-rr.git", branch: 'main' #:path=>"/home/rahul/project/qg-sm"
+# gem 'qg-datapurge',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-datapurge.git", branch: 'main'
+# gem 'qg-ns',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-ns.git", branch: 'main'
+# #gem 'rp',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-rp.git", branch: 'main'
+# gem 'qg-icol',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-icol.git", branch: 'main'
 
 #gem 'rr_new_version',:path=>"/home/rahul/project/rr_new_version"
 # source "https://-p72Ximzp5o1QKVqLPgc@repo.fury.io/qg-ci/" do
