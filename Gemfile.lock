@@ -28,80 +28,6 @@ GIT
   specs:
     encrypted_field (0.1.7)
 
-GIT
-  remote: https://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:x-oauth-basic@github.com/skillmine1234/qg-datapurge.git
-  revision: 8c28ba6f6506624121655d723e1dbddf5e9e4357
-  branch: main
-  specs:
-    qg-datapurge (0.7.0)
-      rails (~> 7.0.4)
-
-GIT
-  remote: https://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:x-oauth-basic@github.com/skillmine1234/qg-ecol.git
-  revision: 306c9338bad8e0d3d7689a5148092d82c3545639
-  branch: main
-  specs:
-    qg-ecol (13.5.0)
-      rails (= 7.0.4)
-
-GIT
-  remote: https://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:x-oauth-basic@github.com/skillmine1234/qg-ft.git
-  revision: 8c28b8f8d6e3dda800f0b6ce3a2cefa23d224a61
-  branch: wip
-  specs:
-    qg-ft (8.1.0)
-      draper
-      pundit
-      rails (>= 7.0.4)
-
-GIT
-  remote: https://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:x-oauth-basic@github.com/skillmine1234/qg-icol.git
-  revision: 5e7c0d4445b313266b6dab2b6f8ccdfe3828dd08
-  branch: main
-  specs:
-    qg-icol (2.1.0)
-      rails (= 7.0.4)
-
-GIT
-  remote: https://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:x-oauth-basic@github.com/skillmine1234/qg-inw.git
-  revision: 6c496efa397799173e5e8727c017a32b754c1433
-  branch: main
-  specs:
-    qg-inw (8.8.0)
-      rails (= 7.0.4)
-
-GIT
-  remote: https://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:x-oauth-basic@github.com/skillmine1234/qg-ns.git
-  revision: bf335df6d47f19dbc3077800ba333f5f562f5681
-  branch: main
-  specs:
-    qg-ns (1.3.0)
-      rails (~> 7.0.4)
-
-GIT
-  remote: https://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:x-oauth-basic@github.com/skillmine1234/qg-rc.git
-  revision: d040df2aba80533a18b7c77a2d0d68aa8338aa01
-  branch: main
-  specs:
-    qg-rc (1.0.6)
-      rails (~> 7.0.4)
-
-GIT
-  remote: https://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:x-oauth-basic@github.com/skillmine1234/qg-rr.git
-  revision: 90f4e3de8b11de25a3f4bee82386a9dce558d4c4
-  branch: main
-  specs:
-    qg-rr (1.0.7)
-      rails (~> 7.0.4)
-
-GIT
-  remote: https://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:x-oauth-basic@github.com/skillmine1234/qg-sm.git
-  revision: 55f73407d83775c545fc7c523f3fe692249b5419
-  branch: main
-  specs:
-    qg-sm (2.0.0)
-      rails (~> 7.0.4)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -743,15 +669,6 @@ DEPENDENCIES
   progress_bar (~> 1.0.0)
   puma (~> 5.0)
   pundit (~> 2.3)
-  qg-datapurge!
-  qg-ecol!
-  qg-ft!
-  qg-icol!
-  qg-inw!
-  qg-ns!
-  qg-rc!
-  qg-rr!
-  qg-sm!
   rails (= 7.0.4)
   rails_12factor
   rake (~> 13.0, >= 13.0.6)
