@@ -6,6 +6,13 @@ GIT
       countries (~> 5.0)
 
 GIT
+  remote: https://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:x-oauth-basic@github.com/rahulrmk/qg-inw.git
+  revision: 7f65804d5809632efdcfc85d3adfeaa433562a08
+  specs:
+    qg-inw (12.0.2)
+      rails (= 7.0.4)
+
+GIT
   remote: https://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:x-oauth-basic@github.com/skillmine1234/approval2.git
   revision: 38c2ae6e75f3cbb782e8254f4af5e73d0856e5a3
   specs:
@@ -24,7 +31,7 @@ GIT
 
 GIT
   remote: https://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:x-oauth-basic@github.com/skillmine1234/encrypted_field.git
-  revision: 73d09e25fb3118064fa61996ebb37af902e81e01
+  revision: bd323436c3733dc11ca9008d7c124e26ade3409a
   specs:
     encrypted_field (0.1.7)
 
@@ -669,8 +676,10 @@ DEPENDENCIES
   progress_bar (~> 1.0.0)
   puma (~> 5.0)
   pundit (~> 2.3)
+  qg-inw!
   rails (= 7.0.4)
   rails_12factor
+  railties
   rake (~> 13.0, >= 13.0.6)
   rb-readline
   rolify (>= 3.2.0)
