@@ -130,7 +130,7 @@ gem 'qg-inw',:git=>"https://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:x-oauth-bas
 #gem 'qg-ft', :path=>"/home/rahul/project/qg-ft"
 
 #gem 'qg-ecol',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-ecol.git", branch: 'main'
-# #gem 'qg-ecol',:path=>"/home/rahul/project/qg-ecol"
+#gem 'qg-ecol',:path=>"/home/rahul/project/qg-ecol"
 
 # #gem 'qg-sc',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-sc.git", branch: 'changes_new_sc'
 # #gem 'qg-obdx',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-obdx.git", branch: 'changes_new_sc'
