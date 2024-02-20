@@ -17,8 +17,8 @@ class Group < ActiveRecord::Base
     #   Qg::Fp::MODELS
     # when "imt1"
     #   Qg::Imt1::MODELS
-    # when "funds-transfer"
-    #   Qg::Ft::MODELS
+      when "funds-transfer"
+        Qg::Ft::MODELS
     # when "salary-upload"
     #   ['IncomingFile','SuCustomer','SuUnapprovedRecord','SuIncomingRecord','FmAuditStep','SuIncomingFile']
     # when "instant-credit"

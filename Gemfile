@@ -129,7 +129,9 @@ gem 'will_paginate', '~> 4.0'
   #gem 'qg-inw',:path=>"/home/rahul/project/rmk2/qg-inw"
   gem 'qg-inw',:git=>"https://github.com/rahulrmk/qg-inw"
 
-# #gem 'qg-ft', :path=>"/home/rahul/project/qg-ft"
+  #gem 'qg-ft', :path=>"/home/rahul/project/rmk2/qg-ft"
+  #gem 'qg-ft', :git=>"https://github.com/rahulrmk/qg-ft"
+
 
 # gem 'qg-ecol',:git=>"https://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:x-oauth-basic@github.com/skillmine1234/qg-ecol.git", branch: 'main'
 # #gem 'qg-ecol',:path=>"/home/rahul/project/qg-ecol"
