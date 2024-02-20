@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/rahulrmk/qg-inw
+  revision: 5ddb4ae15df03163f7a1e941046830729262641a
+  specs:
+    qg-inw (12.0.3)
+      rails (= 7.0.4)
+
+GIT
   remote: https://github.com/stefanpenner/country_select.git
   revision: 95ad4d115284f8592abb95b154b4eaec65debb97
   specs:
@@ -27,12 +34,6 @@ GIT
   revision: 73d09e25fb3118064fa61996ebb37af902e81e01
   specs:
     encrypted_field (0.1.7)
-
-PATH
-  remote: /home/rahul/project/rmk2/qg-inw
-  specs:
-    qg-inw (12.0.3)
-      rails (= 7.0.4)
 
 GEM
   remote: https://rubygems.org/
